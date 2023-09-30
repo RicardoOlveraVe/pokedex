@@ -1,0 +1,18 @@
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+}
+.card{
+    display: grid;
+    width: 95%;
+    max-width: 300px;
+    background-color: #072226;
+    color: white;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 10px 5px 5px  rgba(0, 0, 0, .5);
+    
+}

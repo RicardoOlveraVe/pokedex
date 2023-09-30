@@ -1,0 +1,47 @@
+.home__title {
+    margin-top: 8em;
+    width: 100%;
+    
+}
+.title{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 50%;
+}
+.home__content{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.content {
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.content h2 {
+    color: #FE1936;
+    ;
+}
+.home__form{
+    box-shadow: 4px 5px 5px  rgba(0, 0, 0, .5);
+}
+.home__input {
+    border-radius: 0 0 0 0;
+    width: 13em;
+    height: 2em;
+}
+.home__btn {
+    border-radius: 0 0 0 0 ;
+    border: 0;
+    background-color: #FE1936;
+    color: white;
+    width: 6em;
+    height: 2em;
+}
+
+
+.bottom__img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
