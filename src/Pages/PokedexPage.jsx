@@ -34,7 +34,7 @@ const PokedexPage = () => {
 
   return (
     <div className="pokedex">
-      <img className="page__top" src="/public/pokeTop.svg" alt="" />
+      <img className="page__top" src="/pokeTop.svg" alt="" />
       <div className="pokedex__info">
         <p>Hi {trainer}</p>
         <form className="pokedex__form" onSubmit={handleSearch}>

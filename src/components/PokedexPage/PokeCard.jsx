@@ -11,7 +11,7 @@ const PokeCard = ({url}) => {
     useEffect(() => {
         getPokemon()
     }, [])
-    console.log(pokemon)
+
 
     const handleNavigator = () => {
         navigation(`/pokedex/${pokemon.id}`)

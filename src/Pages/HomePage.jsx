@@ -8,7 +8,6 @@ import "../Style/HomePageStyle.css"
 const HomePage = () => {
 
   const trainer = useSelector(store => store.trainer)
-  console.log(trainer)
 
   const inputTrainer = useRef()
 
