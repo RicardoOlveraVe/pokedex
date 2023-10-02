@@ -1,0 +1,35 @@
+.pagination__container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    margin-top: 1rem;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.pagination{
+    display: flex;
+    box-shadow: 4px 3px 5px  rgba(0, 0, 0, .5);
+    background-color: transparent;
+}
+.pagination__btn{
+    padding: 0;
+    border:none;
+    background-color: transparent;
+}
+.svg-icon{
+    display: grid;
+    place-items: center;
+    width: 2em;
+    background: #DD1A1A;
+}
+.pagination__input{
+    width: 2rem;
+    text-align: center;
+}
+button[disabled] {
+    cursor: no-drop;
+}
+.pagination__text p{
+    font-size: small;
+}

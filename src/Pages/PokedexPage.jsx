@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 import "../Style/PokedexPageStyle.css"
+import Pagination from "../components/Pagination"
 
 const PokedexPage = () => {
 
@@ -14,9 +15,10 @@ const PokedexPage = () => {
 
   const inputSearch = useRef()
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=0.'
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0.'
   const [ pokemons, getPokemons, getTypePokemon] = useFetch(url)
-
+  
+  const pokeFiltered = pokemons?.results.filter(poke => poke.name.includes(inputValue))
   useEffect (() => {
     if(typeSelected === 'allPokemons') {
       getPokemons()
@@ -30,7 +32,10 @@ const PokedexPage = () => {
     setInputValue(inputSearch.current.value.trim().toLowerCase())
   }
 
-  const pokeFiltered = pokemons?.results.filter(poke => poke.name.includes(inputValue))
+  const [pagina, setPagina] = useState(1)
+  const [porPagina, setPorPagina] = useState(20)
+
+  const max = (pokeFiltered?.length / porPagina)
 
   return (
     <div className="pokedex">
@@ -48,13 +53,21 @@ const PokedexPage = () => {
       </div>
       <div className="pokedex__card">
         {
-          pokeFiltered?.map(poke => (
+          pokeFiltered?.slice(
+            (pagina - 1) * porPagina, 
+            (pagina - 1) * porPagina + porPagina)
+          .map(poke => (
             <PokeCard
               key={poke.url}
               url={poke.url}
             />
           ))
-        }
+        }       
+        <Pagination
+          pagina = {pagina}
+          setPagina = {setPagina}
+          max = {max}
+        />
       </div>
     </div>
   )
