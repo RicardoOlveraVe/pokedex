@@ -1,20 +1,75 @@
 .card__container{
     display: flex;
-    flex-wrap: wrap;
     place-items: center;
     justify-content: center;
 }
 .card{
     display: grid;
     width: 95%;
-    max-width: 300px;
-    background-color: #072226;
-    color: white;
+    max-width: 400px;
+    min-width: 300px;
     border-radius: 1em;
     overflow: hidden;
     margin: 10px;
     box-shadow: 10px 5px 5px  rgba(0, 0, 0, .5);
 }
+.card__header{
+    aspect-ratio: 2;
+    position: relative;
+}
+.card__info{
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+.card__img{
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .5em;
+}
+.card__type{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.card__name{
+    font-size: larger;
+}
+.type__card{
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.type__title{
+    color: #9F9F9F;
+    font-size: smaller;
+
+}
+.card__stat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.stat__card{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+.stat__name{
+    color: #9F9F9F;
+    font-size: smaller;
+}
+.stat{
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
 /********** Gradient **********/
 .grass-gradient{
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
@@ -68,50 +123,100 @@
 
 /********** Type border **********/
     .grass-border{
-        background:#7EC6C5;
+        border:7px solid #7EC6C5;
     }
     .fire-border{
-        background:#F96D6F;
+        border:7px solid #F96D6F;
     }
     .water-border{
-        background:#133258;
+        border:7px solid #133258;
     }
     .bug-border{
-        background:#62DB60;
+        border:7px solid #62DB60;
     }
     .normal-border{
-        background:#735259;
+        border:7px solid  #735259;
     }
     .fighting-border{
-        background:#96402A;
+        border:7px solid  #96402A;
     }
     .poison-border{
-        background:#5B3184;
+        background:7px solid #5B3184;
     }
     .ghost-border{
-        background: #323569;
+        background:7px solid  #323569;
     }
     .rock-border{
-        background:#7E7E7E;
+        background:7px solid #7E7E7E;
     }
     .dark-border{
-        background:#030706;
+        background:7px solid #030706;
     }
     .ice-border{
-        background:#6FBEDF;
+        background:7px solid #6FBEDF;
     }
     .steel-border{
-        background:#5E736C;
+        background:7px solid #5E736C;
     }
     .dragon-border{
-        background:#478A93;
+        background:7px solid #478A93;
     }
     .fairy-border{
-        background:#971B45;
+        background:7px solid #971B45;
     }
     .electric-border{
-        background:#0C1395;
+        background:7px solid #0C1395;
     }
     .ground-border{
-        background: #654008;
+        background:7px solid  #654008;
+    }
+
+/********** Type color **********/
+    .grass-color{
+        color:#7EC6C5;
+    }
+    .fire-color{
+        color:#F96D6F;
+    }
+    .water-color{
+        color:#133258;
+    }
+    .bug-color{
+        color:#62DB60;
+    }
+    .normal-color{
+        color: #735259;
+    }
+    .fighting-color{
+        color: #96402A;
+    }
+    .poison-color{
+        color:#5B3184;
+    }
+    .ghost-color{
+        color: #323569;
+    }
+    .rock-color{
+        color:#7E7E7E;
+    }
+    .dark-color{
+        color:#030706;
+    }
+    .ice-color{
+        color:#6FBEDF;
+    }
+    .steel-color{
+        color:#5E736C;
+    }
+    .dragon-color{
+        color:#478A93;
+    }
+    .fairy-color{
+        color:#971B45;
+    }
+    .electric-color{
+        color:#0C1395;
+    }
+    .ground-color{
+        color: #654008;
     }

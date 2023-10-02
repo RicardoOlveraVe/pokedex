@@ -66,7 +66,7 @@ const PokedexIdPage = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="stat">
+                  <div className="stat__container">
                     <h3 className="stat__title">Stats</h3>
                     <div className="stat__list">
                       {
