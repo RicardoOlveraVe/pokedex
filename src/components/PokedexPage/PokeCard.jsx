@@ -12,6 +12,7 @@ const PokeCard = ({url}) => {
         getPokemon()
     }, [])
 
+    const firstType = pokemon?.types[0].type.name
 
     const handleNavigator = () => {
         navigation(`/pokedex/${pokemon.id}`)
@@ -19,7 +20,7 @@ const PokeCard = ({url}) => {
   return (
     <article className="card__container" onClick={handleNavigator}>
         <div className="card">
-            <header>
+            <header className={`${firstType}-gradient`}>
                 <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
             </header>
             <section>

@@ -34,6 +34,7 @@ const PokedexPage = () => {
 
   return (
     <div className="pokedex">
+      <img className="page__title" src="/pokedexTitle.svg" alt="" />
       <img className="page__top" src="/pokeTop.svg" alt="" />
       <div className="pokedex__info">
         <p>Hi {trainer}</p>

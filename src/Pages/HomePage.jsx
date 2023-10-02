@@ -37,7 +37,7 @@ const HomePage = () => {
             </form>
           </div>
         </div>
-          <img className="bottom__img" src="/HomeImage.svg" alt="" />
+          <img className="bottom__img" src="/homeImage.svg" alt="" />
       </div>
     </div>
   )

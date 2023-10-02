@@ -1,20 +1,145 @@
-.card__container{
-    display: flex;
-    flex-wrap: wrap;
-    place-items: center;
-    justify-content: center;
-}
-.card{
+
+.info__container{
     display: grid;
-    width: 95%;
-    max-width: 300px;
-    background-color: #072226;
-    color: white;
-    border-radius: 1em;
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: 10px 5px 5px  rgba(0, 0, 0, .5);
+    place-items: center;
+    width: 100%;
+    max-width: 900px;
 }
+.page__title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+
+    z-index: 2;
+}
+.page__top{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container{
+    margin-top: 15em;
+    border-radius: 0.5em;
+    box-shadow: 1px 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+.info__header{
+    background-color: aqua;
+    aspect-ratio: 4;
+    border-radius: 0.5em;
+
+}
+.info__img {
+    position: absolute;
+    width: 12em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11em;
+}
+.info{
+    display: grid;
+    place-items: center;
+}
+.info__id{
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    width: 2.5em;
+    margin-top: 1em;
+}
+.info__name{
+    margin: .5em;
+}
+.general__list{
+    display: flex;
+    margin: 1em;
+}
+.list__general{
+    display: grid;
+    place-items: center;
+}
+.general__label{
+    margin: .5em;
+}
+.info__special{
+    display: flex;
+}
+.type{
+    display: grid;
+    place-items: center;
+
+}
+.type__list{
+    display: flex;
+}
+.list__type{
+    display: grid;
+    place-items: center;
+    margin: 1em;
+    width: 9em;
+    padding: 0.3em;
+    border-radius: 5px;
+    background: #aaa;
+    color: white;
+}
+.ability{
+    display: grid;
+    place-items: center;
+}
+.ability__list{
+  display: flex;
+}
+.list__ability{
+    display: grid;
+    place-items: center;
+    width: 9em;
+    margin: 1em;
+    padding: 0.3em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.stat{
+    width: 100%;
+}
+.stat h3{
+    text-align: start;
+}
+.stat__list{
+    padding: .5em;
+}
+.list__stat:not(:last-child){
+    margin-bottom: 30px;
+}
+.stat__bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.menu{
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+}
+.menu__stat{
+    animation: barr-stat 2s forwards;
+}
+@keyframes barr-stat{
+    100%{
+        width: 90%;
+    }
+}
+
 /********** Gradient **********/
 .grass-gradient{
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
@@ -66,52 +191,52 @@
 }
 
 
-/********** Type border **********/
-    .grass-border{
+/********** Type bg **********/
+    .grass-bg{
         background:#7EC6C5;
     }
-    .fire-border{
+    .fire-bg{
         background:#F96D6F;
     }
-    .water-border{
+    .water-bg{
         background:#133258;
     }
-    .bug-border{
+    .bug-bg{
         background:#62DB60;
     }
-    .normal-border{
+    .normal-bg{
         background:#735259;
     }
-    .fighting-border{
+    .fighting-bg{
         background:#96402A;
     }
-    .poison-border{
+    .poison-bg{
         background:#5B3184;
     }
-    .ghost-border{
+    .ghost-bg{
         background: #323569;
     }
-    .rock-border{
+    .rock-bg{
         background:#7E7E7E;
     }
-    .dark-border{
+    .dark-bg{
         background:#030706;
     }
-    .ice-border{
+    .ice-bg{
         background:#6FBEDF;
     }
-    .steel-border{
+    .steel-bg{
         background:#5E736C;
     }
-    .dragon-border{
+    .dragon-bg{
         background:#478A93;
     }
-    .fairy-border{
+    .fairy-bg{
         background:#971B45;
     }
-    .electric-border{
+    .electric-bg{
         background:#0C1395;
     }
-    .ground-border{
+    .ground-bg{
         background: #654008;
     }
