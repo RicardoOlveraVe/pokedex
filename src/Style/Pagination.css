@@ -11,13 +11,16 @@
     display: flex;
     box-shadow: 4px 3px 5px  rgba(0, 0, 0, .5);
     background-color: transparent;
+    border-radius: 0.5em;
 }
 .pagination__btn{
     padding: 0;
     border:none;
     background-color: transparent;
+    border-radius: 0.5em;
 }
 .svg-icon{
+    border-radius: 0.5em;
     display: grid;
     place-items: center;
     width: 2em;
@@ -26,6 +29,7 @@
 .pagination__input{
     width: 2rem;
     text-align: center;
+    border: none;
 }
 button[disabled] {
     cursor: no-drop;
