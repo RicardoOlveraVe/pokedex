@@ -10,14 +10,13 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 900px;
-    margin: .5em;
+    margin: 1rem;
 }
 .page__title{
     position: absolute;
     top: 0;
     left: 0;
-    margin: 1em;
-
+    margin: 1rem;
     z-index: 2;
 }
 .page__top{
@@ -55,21 +54,21 @@
     place-items: center;
     border: 1px solid black;
     width: 2.5em;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 .info__name{
-    margin: .5em;
+    margin: 1rem;
 }
 .general__list{
     display: flex;
-    margin: 1em;
+    margin: 1rem;
 }
 .list__general{
     display: grid;
     place-items: center;
 }
 .general__label{
-    margin: .5em;
+    margin: 1rem;
 }
 .info__special{
     display: flex;
@@ -83,11 +82,14 @@
 }
 .type__list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .list__type{
-    display: grid;
-    place-items: center;
-    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
     width: 9em;
     padding: 0.3em;
     border-radius: 5px;
@@ -105,7 +107,7 @@
     display: grid;
     place-items: center;
     width: 9em;
-    margin: 1em;
+    margin: 1rem;
     padding: 0.3em;
     border: 1px solid black;
     border-radius: 5px;
@@ -120,17 +122,17 @@
     padding: .5em;
 }
 .list__stat:not(:last-child){
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 .stat__bar{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 .menu{
     position: relative;
-    border: 1px solid cyan;
+    border: 1px solid #E6901E;
     border-radius: 20px;
 }
 .menu div{
@@ -146,8 +148,8 @@
 .movements__container{
     width: 100%;
     max-width: 700px;
-    margin: 1em;
-    margin-top: 2em;
+    margin: 1rem;
+    margin-top: 2rem;
     border-radius: 0.5em;
     box-shadow: 1px 5px 5px 10px rgba(0, 0, 0, 0.3);    
 }
@@ -161,7 +163,7 @@
     place-items: center;
     border-radius: 0.5em;
     background: #E5E5E5;
-    margin: 0.5em;
+    margin: 0.5rem;
     width: 9em;
     height: 2em;
 }
