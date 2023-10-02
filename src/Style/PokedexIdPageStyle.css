@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 900px;
+    margin: .5em;
 }
 .page__title{
     position: absolute;
@@ -145,8 +146,8 @@
 .movements__container{
     width: 100%;
     max-width: 700px;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin: 1em;
+    margin-top: 2em;
     border-radius: 0.5em;
     box-shadow: 1px 5px 5px 10px rgba(0, 0, 0, 0.3);    
 }
