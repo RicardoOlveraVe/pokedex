@@ -42,7 +42,7 @@ const Pagination = ({pagina, setPagina, max}) => {
         <div className="pagination__container">
             <div className="pagination">
                 <button disabled={pagina === 1 || pagina < 1} onClick={previousPage} className="pagination__btn">
-                    <img className="svg-icon" src="/public/arrowLeft.svg" alt="" />
+                    <img className="svg-icon" src="/arrowLeft.svg" alt="" />
                 </button>
                 <input 
                 className="pagination__input"
@@ -58,7 +58,7 @@ const Pagination = ({pagina, setPagina, max}) => {
                  onClick={nextPage}
                 className="pagination__btn"
                 >
-                    <img className="svg-icon" src="/public/arrowRight.svg" alt="" />
+                    <img className="svg-icon" src="/arrowRight.svg" alt="" />
                 </button>
             </div>
             <div className="pagination__text">
