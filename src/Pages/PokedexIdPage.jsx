@@ -76,7 +76,9 @@ const PokedexIdPage = () => {
                             <span className="stat__value">{statInfo.base_stat}/150</span>
                           </div>
                           <div className="menu">
-                            <div className="menu__stat"></div>
+                            <div className="menu__stat"
+                              style={{width: `${(statInfo.base_stat/150)*100}%`}}
+                            ></div>
                           </div>
                         </div>
                       ))

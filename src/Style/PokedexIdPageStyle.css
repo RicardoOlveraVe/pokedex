@@ -134,11 +134,6 @@
 .menu__stat{
     animation: barr-stat 2s forwards;
 }
-@keyframes barr-stat{
-    100%{
-        width: 90%;
-    }
-}
 
 /********** Gradient **********/
 .grass-gradient{
